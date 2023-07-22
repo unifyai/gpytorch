@@ -265,6 +265,8 @@ def sqrt_inv_matmul(input: Anysor, rhs: Tensor, lhs: Optional[Tensor] = None) ->
     """
     return linear_operator.sqrt_inv_matmul(input=input, rhs=rhs, lhs=lhs)
 
+# Ivy Transpile Methods
+from .transpile import unify, to_ivy, to_jax, to_tensorflow, to_numpy, to_paddle
 
 # Read version number as written by setuptools_scm
 try:
